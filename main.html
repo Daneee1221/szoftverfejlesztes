@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcnHykCfh3-ZAjAh50_k81KKvd-ls-O50&callback=initMap&v=weekly"
+        async></script>
+    </div>
+    <h1 >A kiválaszott szélességi fok: </h1>
+    <h1 id="szel"></h1>
+    <h1 >A kiválaszott hosszúsági fok: </h1>
+    <h1 id="hossz"></h1>
+    <label for="terulet">Mekkora területen szeretne vizsgálni? (m2)</label>
+    <input type="number" id="terulet" name="terulet" min="10" max="10000"><br>
+    <button onclick="calculation()" class="button">Koordináták elküldése</button>
+
+</body>
+
+</html>
